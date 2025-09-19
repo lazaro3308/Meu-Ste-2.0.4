@@ -1,0 +1,288 @@
+/* Fontes e base */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #fff6f6 0%, #ffe3e3 100%);
+    color: #222;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+h1 {
+    color: #000000;
+}
+
+header {
+    background: linear-gradient(90deg, #d10000 60%, #ff6a00 100%);
+    color: white;
+    padding: 24px 0 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #1a1a1a;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 16px 0 0;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.08rem;
+    padding: 12px 18px;
+    display: inline-block;
+    border-radius: 8px;
+    margin: 4px 4px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+nav ul li a:hover {
+    background: linear-gradient(90deg, #ff6a00 0%, #d10000 100%);
+    color: #fff200;
+    box-shadow: 0 2px 8px rgba(255,106,0,0.13);
+}
+
+main {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 38px 22px 0 22px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 18px 0 12px 0;
+    background: linear-gradient(90deg, #1a1a1a 60%, #d10000 100%);
+    color: #fff;
+    font-size: 1.05rem;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.07);
+}
+
+.contatos {
+    background: linear-gradient(120deg, #fff 60%, #ffe3e3 100%);
+    padding: 22px 20px;
+    margin: 36px auto 0 auto;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    max-width: 420px;
+    border: 1.5px solid #ffe3e3;
+}
+.contatos h2 {
+    margin-top: 0;
+    color: #d10000;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+}
+.contatos a {
+    color: #fff;
+    background: linear-gradient(90deg, #d10000 60%, #ff6a00 100%);
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    display: inline-block;
+    box-shadow: 0 1px 6px rgba(255,106,0,0.10);
+}
+.contatos a:hover {
+    background: linear-gradient(90deg, #ff6a00 0%, #d10000 100%);
+    color: #fff200;
+    box-shadow: 0 2px 12px rgba(255,106,0,0.18);
+}
+/* Removidas propriedades soltas que causavam erro de sintaxe */
+.contatos p {
+    margin-bottom: 8px;
+}
+.contatos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contatos ul li {
+    margin-bottom: 8px;
+}
+.contatos a {
+    color: #fff;
+    background: linear-gradient(90deg, #d10000 60%, #ff6a00 100%);
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    display: inline-block;
+    box-shadow: 0 1px 6px rgba(255,106,0,0.10);
+}
+.contatos a:hover {
+    background: linear-gradient(90deg, #ff6a00 0%, #d10000 100%);
+    color: #fff200;
+    box-shadow: 0 2px 12px rgba(255,106,0,0.18);
+}
+/* Responsividade */
+@media (max-width: 900px) {
+    main {
+        padding: 14px 4vw 0 4vw;
+    }
+    .contatos {
+        max-width: 98vw;
+    }
+} 
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 0 0 6px 0;
+        display: block;
+    }
+    main {
+        padding: 8px 1vw 0 1vw;
+    }
+    .contatos {
+        padding: 10px 2vw;
+    }
+}
+
+img, image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin: 44px 0 36px 0;
+    justify-content: center;
+    padding: 0 10px;
+}
+.produto-box {
+    background: linear-gradient(120deg, #fff 60%, #ffe3e3 100%);
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    padding: 26px 18px 20px 18px;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.22s, box-shadow 0.22s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.5px solid #ffe3e3;
+}
+.produto-box:hover {
+    transform: scale(1.045);
+    box-shadow: 0 6px 24px rgba(255,106,0,0.13);
+}
+.produto-box img {
+    width: 170px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    background: #eee;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+.produto-box h3 {
+    margin: 12px 0 8px 0;
+    color: #d10000;
+    font-size: 1.13rem;
+    letter-spacing: 0.5px;
+}
+.produto-box p {
+    font-size: 0.97rem;
+    color: #333;
+    flex-grow: 1;
+}
+.produto-box .preco {
+    font-size: 1.13rem;
+    color: #000;
+    font-weight: bold;
+    margin-top: 12px;
+    background: #ffe3e3;
+    border-radius: 6px;
+    padding: 4px 10px;
+    display: inline-block;
+}
+.nav#menu {
+    margin-top: 10px;
+}
+
+/* Formulário de contato */
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 18px;
+}
+.contato-form label {
+    font-weight: 600;
+    color: #d10000;
+    margin-bottom: 2px;
+}
+.contato-form input[type="text"],
+.contato-form input[type="email"],
+.contato-form textarea {
+    padding: 10px;
+    border-radius: 7px;
+    border: 1.5px solid #ffe3e3;
+    font-size: 1rem;
+    font-family: inherit;
+    background: #fff;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+.contato-form input[type="text"]:focus,
+.contato-form input[type="email"]:focus,
+.contato-form textarea:focus {
+    border: 1.5px solid #d10000;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(255,106,0,0.10);
+}
+.contato-form input[type="submit"] {
+    background: linear-gradient(90deg, #d10000 60%, #ff6a00 100%);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1.08rem;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 6px rgba(255,106,0,0.10);
+}
+.contato-form input[type="submit"]:hover {
+    background: linear-gradient(90deg, #ff6a00 0%, #d10000 100%);
+    color: #fff200;
+    box-shadow: 0 2px 12px rgba(255,106,0,0.18);
+}
+
